@@ -959,6 +959,7 @@ dframe_json = pd.DataFrame(all_requests_data)
 final_req_df = dframe_json.transpose()
 final_req_df.columns = ['Country', 'Latitude', 'Temperature(F)', 'Humidity(%)', 'Cloudiness(%)', 'Wind Speed(MpH)',
                         'Date']
+final_req_df.to_csv('Weather_requests.csv')
 print(final_req_df.count())
 final_req_df.head()
 ```
@@ -1176,6 +1177,7 @@ extracted_data = [city(*search) for city in all_owm_data]
 final_owm_df = pd.DataFrame(extracted_data)
 final_owm_df.columns = ['Name','Country', 'Latitude', 'Temperature(C)', 'Humidity(%)', 'Cloudiness(%)',
                         'Wind Speed(MpH)', 'Date']
+final_owm_df.to_csv('Weather_owm.csv')
 print(final_owm_df.count())
 final_owm_df.head()
 ```
