@@ -24,7 +24,7 @@ from itertools import cycle
 
 **Create a list of random cities**
 
-# this code kills the kernel, what I did wrong?
+#### test code that needs to be fixed
 cities = {}
 
 def onemoreloop():
@@ -46,7 +46,7 @@ def citylistcreator():
 citylistcreator()
 print(len(cities))
 
-**This works fine, but the output number of cities is unpredictable**
+**From 3000 cities we can get about 1000 unique cities**
 
 
 ```python
